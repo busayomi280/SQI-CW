@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #cfcece;
+}
+.generate{
+    padding: 30px;
+    text-align: center;
+}
+.select-network-div{
+    padding: 50px;
+    gap: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.generate select{
+    padding: 2px 8px;
+    font-size: .9em;
+    border: 2px solid #727272;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.recharge input{
+    width: 180px;
+    height: 32px;
+    padding: 0 5px;
+    border: 2px solid #727272;
+}
+.recharge-btn{
+    padding: 8px 20px;
+    font-size: .9em;
+    background: #2727eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-gen{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    font-size: 1.3em;
+    font-weight: normal;
+}
+#pin-display{
+    padding: 0 5px;
+    width: 180px;
+    height: 32px;
+    border: 2px solid #727272;
+}
+.generate-btn{
+    padding: 10px 20px;
+    font-size: .9em;
+    background: #06bd06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+table{
+    padding: 20px 10px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; 
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+} 
+th{
+    padding: 10px 20px;
+}
+tbody td{
+    padding: 8px 20px;
+}

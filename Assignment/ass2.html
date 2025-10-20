@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(249, 244, 239);
+        }
+        .ass2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 250px;
+            gap: .5em;
+        }
+        .ass2 input, .ass2 select{
+            padding: 8px 20px;
+            border: 1px solid gray;
+            background-color: transparent;
+        }
+        .submit{
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(6, 6, 223);
+            padding: 8px 20px;
+            color: white;
+        }
+        .result{
+            padding: 8px 20px;
+            border: 1px solid gray;
+            background-color: transparent;
+        }
+        .btn{
+            padding: 6px;
+            border-radius: 5px;
+            border: 2px solid grey;
+            background-color: transparent;
+        }
+        .dark-theme{
+            background-color: #232323;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <button class="btn" onclick="changeBackgroundColor()">dark mode</button>
+    <div class="ass2">
+        <input type="text" id="num1"> 
+        <select name="" id="selectOperator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="%">%</option>
+        </select>
+         <input type="text" id="num2"> 
+         <button class="submit"onclick="calculator()">submit</button>
+         <p class="result" ></p>
+         <p class="currentValue">Current value: </p>
+    </div>
+
+   
+</body>
+<script src="./ass2.js"></script>
+</html>

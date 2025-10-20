@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding-left: 40px;
+    }
+    button, .delete{
+        background-color: blue;
+        padding: 6px 25px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+    }
+    ul div{
+        display: flex;
+        gap: 1em;
+        padding-bottom: 20px;
+    }
+    ul li{
+        list-style: none;
+    }
+</style>
+<body>
+    <h1>Add list</h1>
+    <input type="text" id="listInput">
+    <button class="addbtn" onclick="addList()">Add</button>
+
+    <ul id="display"> 
+    </ul>
+</body>
+<script src="./addlist.js"></script>
+</html>

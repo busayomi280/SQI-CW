@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recharge.css">
+</head>
+<body>
+    <section class="generate">
+        <h1>Recharge Card Generator</h1>
+       <div class="select-network-div">
+        <div class="network-wrapper">
+             <label for="">Select Network: </label>
+            <select name="" id="network">
+                <option value="glo">GLO</option>
+                <option value="mtn">MTN</option>
+                <option value="airtel">AIRTEL</option>
+                <option value="etisalat">9MOBILE</option>
+            </select>
+       </div>
+
+        <div class="recharge">
+            <label for="En">Enter Pin :</label>
+            <input type="text" id="pin">
+            <button class="recharge-btn" onclick="recharge()">Recharge</button>
+        </div>
+       </div>
+
+       <div class="amount">
+         <label for="">Amount:</label>
+        <select name="" id="amount">
+            <option value="#500">#500</option>
+            <option value="#200">#200</option>
+            <option value="#100">#100</option>
+        </select>
+       </div>
+
+       <div class="card-gen">
+        <h2 class="card">Card:</h2>
+        <input type="text" id="pin-display">
+        <button class="generate-btn" onclick="generate()">Generate</button>
+        <button class="generate-btn" onclick="savePin()">Save Pin</button>
+       </div>
+
+       <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Network</th>
+                        <th>Amount</th>
+                        <th>Pin</th>
+                        <th>Status</th>
+                        <th>Date Created</th>
+                        <th>Date used</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            <tbody id="table-body">
+               
+            </tbody>
+         </table> 
+        </div>
+    </section>
+
+
+</body>
+<script src="./recharge.js"></script>
+</html>

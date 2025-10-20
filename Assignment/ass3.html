@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(249, 244, 239);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    .body{
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    input{
+        padding: 8px 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: transparent;
+    }
+    .submit{
+        border: none;
+        border-radius: 8px;
+        background-color: rgb(6, 6, 223);
+        padding: 8px 20px;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="body">
+        <h1>Guess The Number</h1>
+        <p>We have selected a random number between 1 and 10. See if you can guess it.</p>
+        <label for="">Enter your guess:</label>
+
+        <input type="text" id="userInput">
+
+        <button class="submit" onclick="numberGuess()">Submit guess</button>
+    </div>
+</body>
+<script src="./ass3.js"></script>
+</html>
