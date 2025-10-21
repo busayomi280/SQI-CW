@@ -11,20 +11,78 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./calculator.css" />
   </head>
   <body>
     <div class="calculatorBody">
-        
+      <div class="cal-top">
+        <div class="cal-top-left">
+          <i class="fa-solid fa-calculator"></i>
+          <h4>calculator</h4>
+        </div>
+        <div class="cal-top-right">
+          <i class="fa-solid fa-minus"></i>
+          <i class="fa-solid fa-window-maximize"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="cal-standard">
+            <div class="standard-left">
+                <i class="fa-solid fa-bars"></i>
+            <h4>Standard</h4>
+             <i class="fa-solid fa-arrows-up-down-left-right"></i>
+            </div>
+        <i class="fa-solid fa-gauge-simple-high"></i>
+      </div>
+      <div class="displays">
+        <p class="operationDisplay"></p>
+        <p class="resultDisplay"></p>
+      </div>
+      <div class="theMs">
+        <ul>
+            <li>MC</li>
+            <li>MR</li>
+            <li>M+</li>
+            <li>M-</li>
+            <li>MS</li>
+            <li>M-</li>
+        </ul>
+      </div>
+
+      <div class="operators"> 
+        <button class="operatorBtn" onclick="showOperator(' % ')">%</button>
+        <button class="operatorBtn" onclick="clearAll()">CE</button>
+        <button class="operatorBtn" onclick="clear()">C</button>
+        <button class="operatorBtn" data-operator="+/-">+/-</button>
+        <button class="operatorBtn" onclick="specialOperator2()">1/x</button>
+        <button class="operatorBtn" onclick="specialOperator1()">x^2</button>
+        <button class="operatorBtn" onclick="specialOperator3()"><i class="fa-solid fa-square-root-variable"></i></button>
+        <button class="operatorBtn" onclick="showOperator('  + ')">+</button>
+        <button class="operatorBtn" onclick="showOperator('7')">7</button>
+        <button class="operatorBtn" onclick="showOperator('8')">8</button>
+        <button class="operatorBtn" onclick="showOperator('9')">9</button>
+        <button class="operatorBtn" onclick="showOperator(' / ')">&#247;</button>
+        <button class="operatorBtn" onclick="showOperator('4')">4</button>
+        <button class="operatorBtn" onclick="showOperator('5')">5</button>
+        <button class="operatorBtn" onclick="showOperator('6')">6</button>
+        <button class="operatorBtn" onclick="showOperator('  x ')">&times;</button>
+        <button class="operatorBtn" onclick="showOperator('1')">1</button>
+        <button class="operatorBtn" onclick="showOperator('2')">2</button>
+        <button class="operatorBtn" onclick="showOperator('3')">3</button>
+        <button class="operatorBtn" onclick="showOperator('  - ')">-</button>
+        <button class="operatorBtn" data-operator="+-">+-</button>
+        <button class="operatorBtn" onclick="showOperator('0')">0</button>
+        <button class="operatorBtn" onclick="showOperator('.')">.</button>
+        <button class="operatorBtn equalSign" 
+        onclick="calculator()"
+        data-operator="=">=</button>
+      </div>
+
     </div>
   </body>
   <script src="./calculator.js"></script>
 </html>
 
-       <!--  
+<!--  
         <i class="fa-solid fa-xmark"></i>
-        <i class="fa-solid fa-arrows-up-down-left-right"></i>
-        <i class="fa-solid fa-calculator"></i>
-        <i class="fa-solid fa-minus"></i>
-        <i class="fa-solid fa-window-maximize"></i>
-        <i class="fa-solid fa-gauge-simple-high"></i>
          -->
